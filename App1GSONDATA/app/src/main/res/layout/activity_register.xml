@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:focusable="auto"
+    android:orientation="vertical"
+    android:fontFamily="@font/aldrich">
+
+    <TextView
+        android:fontFamily="@font/aldrich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="20dp"
+        android:text="Sign Up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/red_color"
+        android:textSize="28dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:fontFamily="@font/aldrich"
+        android:id="@+id/text_input_layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_text_name"
+        android:fontFamily="@font/aldrich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Enter your name"
+        android:textColor="@color/lightpink"
+        android:textColorHint="@color/lightpink" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_email"
+        android:fontFamily="@font/aldrich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_text_email"
+        android:fontFamily="@font/aldrich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Enter your email"
+        android:textColorHint="@color/lightpink" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_password"
+        android:fontFamily="@font/aldrich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_text_password"
+        android:fontFamily="@font/aldrich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Enter your password"
+        android:inputType="numberPassword"
+        android:textColor="@color/lightpink"
+        android:textColorHint="@color/lightpink" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_mobile"
+        android:fontFamily="@font/aldrich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_text_mobile"
+        android:fontFamily="@font/aldrich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Enter your mobile number"
+        android:textColor="@color/lightpink"
+        android:textColorHint="@color/lightpink" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/button_register"
+        android:fontFamily="@font/aldrich"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:text="Register"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/red_color"
+        android:background="@color/white_color"
+        android:textSize="24sp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already a user? Click here to Login"
+        android:textSize="18sp"
+        android:textColor="@color/black_color"
+        android:textStyle="italic"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/click_to_login"/>
+
+</LinearLayout>

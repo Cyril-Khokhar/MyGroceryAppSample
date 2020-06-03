@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/menu_cart"
+        android:fontFamily="@font/aldrich"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="Cart"
+        app:showAsAction="always" />
+
+    <item
+
+        android:fontFamily="@font/aldrich"
+        android:id="@+id/menu_account"
+        android:title="My Account"
+        app:showAsAction="never"
+     />
+
+    <item
+        android:iconTint="@color/red_color"
+        android:fontFamily="@font/aldrich"
+        android:id="@+id/menu_order"
+        android:title="Order History"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:iconTint="@color/red_color"
+        android:fontFamily="@font/aldrich"
+        android:id="@+id/menu_logout"
+        android:title="logout"
+        app:showAsAction="never"
+        />
+</menu>

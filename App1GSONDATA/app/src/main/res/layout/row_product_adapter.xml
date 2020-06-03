@@ -1,0 +1,86 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/white_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/image_view_product"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/aldrich"
+            android:id="@+id/text_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_view_product"
+            android:textColor="@color/appbar"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:fontFamily="@font/aldrich"
+            android:id="@+id/text_view_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_name"
+            android:layout_toRightOf="@id/image_view_product"
+            android:textColor="@color/appbar"
+            android:textSize="14sp"
+             />
+
+<!--        <TextView-->
+<!--            android:fontFamily="@font/aldrich"-->
+<!--            android:id="@+id/dollar_sign"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/text_view_name"-->
+<!--            android:layout_toRightOf="@+id/image_view_product"-->
+<!--            android:text="$"-->
+<!--            android:textColor="@color/appbar"-->
+<!--            android:textSize="20sp"-->
+<!--             />-->
+
+        <TextView
+            android:fontFamily="@font/aldrich"
+            android:id="@+id/text_view_mrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_price"
+            android:layout_toRightOf="@id/image_view_product"
+            android:text="@string/line"
+            android:textColor="@color/appbar"
+            android:textSize="14sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_add_to_cart"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/white_color"
+            android:text="Add to Cart"
+            android:textColor="@color/red_color"
+            android:textAlignment="center"
+            android:fontFamily="@font/aldrich"
+            android:padding="5dp"/>
+
+        <include layout="@layout/cart_button"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="bgcolorDark">#b5352b</color>
+    <color name="bgcolorLight">#f0ad86</color>
+    <color name="appbar">#000</color>
+    <color name="white_color">#ffffff</color>
+    <color name="lightpink">#ffdbde</color>
+    <color name="red_color">#c71808</color>
+    <color name="black_color">#000</color>
+</resources>

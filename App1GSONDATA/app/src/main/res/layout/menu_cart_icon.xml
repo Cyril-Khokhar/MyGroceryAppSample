@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="38dp"
+    android:padding="3dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_shopping_cart_black_24dp"/>
+
+    <TextView
+        android:fontFamily="@font/aldrich"
+        android:textStyle="bold"
+        android:textColor="@color/appbar"
+        android:textSize="10sp"
+        android:id="@+id/text_view_cart_icon"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:background="@drawable/badge_circle"
+        android:layout_width="15sp"
+        android:layout_height="15sp"/>
+
+</RelativeLayout>

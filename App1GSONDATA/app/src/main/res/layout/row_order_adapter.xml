@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_order_num"
+        android:text="Order #"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_view_order_num"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:id="@+id/text_view_order_number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/text_view_order_num"
+        android:id="@+id/total_items_text"
+        android:text="Date Ordered : "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_order_num"
+        android:id="@+id/total_items"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/total_items_text"
+        android:id="@+id/amount_paid_text"
+        android:text="Amount Paid : "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_items"
+        android:layout_alignParentRight="true"
+        android:id="@+id/amount_paid"
+        android:text="100"
+        android:layout_marginRight="50dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="More Details"
+        android:background="@color/white_color"
+        android:textColor="@color/red_color"
+        android:layout_below="@id/amount_paid_text"
+        android:layout_alignParentRight="true"
+        android:id="@+id/button_details"
+        android:textSize="12sp"/>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_layout_order_items"
+        android:layout_below="@+id/button_details">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

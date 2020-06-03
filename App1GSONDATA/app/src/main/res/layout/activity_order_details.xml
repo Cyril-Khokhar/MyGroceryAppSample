@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/app_bar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/toolbar"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/black_color"
+        android:layout_below="@id/recycler_view_order_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shipped to : "
+        android:layout_marginBottom="10dp"
+        android:id="@+id/Shipped_to"/>
+
+    <TextView
+        android:textColor="@color/black_color"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycler_view_order_details"
+        android:layout_toRightOf="@id/Shipped_to"
+        android:id="@+id/shipped_address"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black_color"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Shipped_to"
+        android:id="@+id/Ordered_by"
+        android:text="Ordered by : "
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:textColor="@color/black_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:text="Name"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/shipped_address"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/Ordered_by"/>
+
+    <TextView
+        android:textColor="@color/black_color"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Ordered_by"
+        android:id="@+id/Date_Ordered"
+        android:text="Date Ordered : "
+
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:text="Date"
+        android:textColor="@color/black_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_below="@id/username"
+        android:textSize="16sp"
+        android:id="@+id/date_ordered"
+        android:layout_toRightOf="@id/Date_Ordered"/>
+
+
+</RelativeLayout>

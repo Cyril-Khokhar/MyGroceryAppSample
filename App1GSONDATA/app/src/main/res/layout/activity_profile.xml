@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/app_bar"/>
+
+        <ImageView
+            android:layout_below="@+id/toolbar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/profile_image"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:id="@+id/logged_text"
+            android:layout_marginLeft="40dp"
+           android:textSize="14sp"
+            android:layout_below="@id/profile_image"
+            android:text="Logged in as : "/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/logged_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logged_in_email"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_below="@id/profile_image"
+            android:textColor="@color/black_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="-----------------------------------------------------------------------"
+        android:layout_below="@id/logged_in_email"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_details"
+            android:layout_below="@id/profile_image"
+            android:text="User Details"
+            android:textColor="@color/black_color"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:textColor="@color/black_color"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/profile_name"
+            android:layout_below="@id/profile_details"
+            />
+
+        <TextView
+            android:textColor="@color/black_color"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_email"
+            android:layout_below="@id/profile_name"
+            />
+
+        <TextView
+            android:textColor="@color/black_color"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_mobile"
+            android:layout_below="@id/profile_email"
+            />
+
+    </RelativeLayout>
